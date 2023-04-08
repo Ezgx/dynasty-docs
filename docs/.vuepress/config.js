@@ -29,7 +29,7 @@ module.exports = {
     ],
     nav: [
       { text: '食用文档', link: '/' },
-      { text: '预览主题', link: 'https:/ezgx.site/' }
+      { text: '预览主题', link: 'https://ezgx.site/' }
     ],
     lastUpdated: '最近更新时间', // string | boolean
     smoothScroll: true,
