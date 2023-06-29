@@ -5,7 +5,7 @@
 从`github`克隆
 
 ```bash
-git clone https://github.com/Ezgx/hexo-theme-dimension /theme/dimension
+git clone https://github.com/Ezgx/hexo-theme-dynasty /theme/dynasty
 ```
 
 ## 方法二
@@ -13,11 +13,11 @@ git clone https://github.com/Ezgx/hexo-theme-dimension /theme/dimension
 `npm包`安装
 
 ```bash
-npm i hexo-theme-dimension --save
+npm i hexo-theme-dynasty --save
 
 # 或
 
-cnpm i hexo-theme-dimension --save
+cnpm i hexo-theme-dynasty --save
 ```
 
 ## 必要插件
@@ -32,7 +32,7 @@ npm i hexo-wordcount hexo-renderer-pug hexo-renderer-stylus hexo-renderer-kramed
 
 ## 文件操作
 
-1. 将下载的主题中的`_config.dimension.yml`放到博客根目录下
+1. 将下载的主题中的`_config.dynasty.yml`放到博客根目录下
 2. 解压`source.7z`，所有内容放到`$blogroot/source`下，提示替换时请备份你的文件。
 
 ## 启用主题
@@ -42,5 +42,5 @@ npm i hexo-wordcount hexo-renderer-pug hexo-renderer-stylus hexo-renderer-kramed
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: dimension
+theme: dynasty
 ```

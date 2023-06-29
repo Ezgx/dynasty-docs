@@ -1,6 +1,6 @@
-# 进阶配置
+# 配置2
 
-> 配置文件指`_config.dimension.yml`
+> 配置文件指`_config.dynasty.yml`
 
 ## cdn
 
@@ -90,7 +90,7 @@ options为自定义替换第三方js，非必要请勿修改！若填写一个�
 
 ## inject（自定义css，js）
 
-### 配置文件第948行
+### 配置文件第935行
 
 ```yml
 # Inject
@@ -159,7 +159,7 @@ ClickShowText:
   enable: true
   text:
     - 欢迎来到
-    - Echocbx的
+    - Aegcbx的
     - 博客
   fontSize: 16px
   random: false
@@ -168,50 +168,9 @@ ClickShowText:
 
 背景特效配置简单易懂，不做赘述。
 
-## 副标题
-
-### 配置文件第735行
-
-```yml
-# the subtitle on homepage (主頁subtitle)
-subtitle:
-  enable: true
-  # Typewriter Effect (打字效果)
-  effect: true
-  # Effect Speed Options (打字效果速度參數)
-  startDelay: 10 # time before typing starts in milliseconds
-  typeSpeed: 80 # type speed in milliseconds
-  backSpeed: 70 # backspacing speed in milliseconds
-  # loop (循環打字)
-  loop: true
-  # source 調用第三方服務
-  # source: false 關閉調用
-  # source: 1  調用一言網的一句話（簡體） https://hitokoto.cn/
-  # source: 2  調用一句網（簡體） http://yijuzhan.com/
-  # source: 3  調用今日詩詞（簡體） https://www.jinrishici.com/
-  # subtitle 會先顯示 source , 再顯示 sub 的內容
-  source: false
-  # 如果關閉打字效果，subtitle 只會顯示 sub 的第一行文字
-  sub: 
-    - 彼方为谁，无我有问，九月露湿，待君之前。
-    - 花无凋零之日，意无传递之时。
-    - 我已经准备好了足够挡雨的伞，雨却没有到来。
-    - 终是庄周梦了蝶，你是恩赐也是劫。
-```
-
-- enable表示是否开启
-- effect设为true开启打字效果
-- startDelay为打字延迟
-- source可调用api
-- 可按照示例设置多个副标题
-- loop为循环打字，如果不开启循环，只会显示第一个副标题
-> 使用以下配置请先打开loop
-- typedspeed为打字速度
-- backspeed为删除时速度
-
 ## 加载动画
 
-### 配置文件第764行
+### 配置文件第717行
 
 ```yml
 # Loading Animation (加載動畫)
@@ -229,3 +188,24 @@ preloader:
 - enable：是否开启
 - source：设为1是全屏动画，设为2是加载条，设为3是全屏动画加加载条。
 - pace_css_url：加载条css，见https://codebyzach.github.io/pace/
+
+## 代码高亮
+
+### 配置文件第138行
+
+```yml
+# Code Blocks (代碼相關)
+# --------------------------------------
+
+highlight_theme: mac light #  darker / pale night / light / ocean / mac / mac light / false
+highlight_copy: true # copy button
+highlight_lang: true # show the code language
+highlight_shrink: false # true: shrink the code blocks / false: expand the code blocks | none: expand code blocks and hide the button
+highlight_height_limit: 300 # unit: px
+code_word_wrap: false
+```
+- highlight_theme表示高亮主题，可选：darker / pale night / light / ocean / mac / mac light / false
+- highlight_copy是否开启点击复制按钮
+- highlight_lang是否显示代码语言（如yaml，html，css，Python）
+- highlight_height_limit为代码块高度限制，防止高度过高。
+

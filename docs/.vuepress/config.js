@@ -1,9 +1,9 @@
 module.exports = {
   dest: 'public',
-  title: 'hexo主题Dimension',
+  title: 'hexo主题dynasty',
   description: '二次元风格的hexo主题',
   head: [
-    ['link', { rel: 'icon', href: 'https://ezgx.site/img/avatar.png' }],
+    ['link', { rel: 'icon', href: 'https://pic.imgdb.cn/item/649dc9951ddac507cc28e054.png' }],
     [
       'script', {}, `
       var _hmt = _hmt || [];
@@ -19,12 +19,13 @@ module.exports = {
   ]
   ],
   themeConfig: {
-    logo: 'https://ezgx.site/img/avatar.png',
+    logo: 'https://pic.imgdb.cn/item/649dc9951ddac507cc28e054.png',
     sidebar: [
       ['/1-Introduction','简介'],
       ['/2-docs1','安装'],
       ['/3-docs2','基本配置'],
-      ['/4-docs3','进阶配置'],
+      ['/4-docs3','配置2'],
+      ['/5-docs4','配置3'],
       ['/qq','加群反馈'],
     ],
     nav: [
@@ -47,7 +48,7 @@ module.exports = {
     [
       'sitemap',
       {
-        hostname: 'https://dimension.ezgx.site'
+        hostname: 'https://dynasty.ezgx.site'
       }
     ],
     ['vuepress-plugin-baidu-autopush']

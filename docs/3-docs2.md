@@ -1,6 +1,6 @@
 # 基本配置
 
-> 配置文件指`_config.dimension.yml`
+> 配置文件指`_config.dynasty.yml`
 
 ## 导航菜单
 
@@ -22,34 +22,35 @@ menu:
 
 ```yml
 # 首页板块
-hometop: 
-  enable: true # true或false，总开关。
-  creativities: # 滚动图标开关
-    enable: true
-  featured_article: # 推荐文章开关
-    enable: true
-  show_tag_categroy: # 分类标签开关
-    enable: true
+hometop:
+  featured_posts:
+    posts:
+      - cover: https://pic.imgdb.cn/item/64061c93f144a01007f083cb.jpg
+        link: /2023/dimension
+        title: hexo主题dimension
+      - cover: /img/posts/home.png
+        link: /2023/46680
+        title: 【原创】cbx-home开源首页
+      - cover: https://pic.imgdb.cn/item/64039f55f144a010077911cd.jpg
+        link: /2022/da0f
+        title: 百度网盘直连下载
+      - cover: https://pic.imgdb.cn/item/64039fd0f144a01007796d4a.jpg
+        link: /2023/5781
+        title: 一篇文章教你搞定butterfly主题洪化
+      - cover: https://pic.imgdb.cn/item/64039fd0f144a01007796dce.jpg
+        link: /2022/65320
+        title: markdown-it食用教程
+      - cover: https://pic.imgdb.cn/item/6403a054f144a0100779cd5d.jpg
+        link: /2023/34037
+        title: 自定义美化你的windows桌面！
+    categroies_more_url: /categories/
+    tags_more_url: /tags
+  descr:
+    img: https://pic.imgdb.cn/item/64160cbfa682492fcc81bc40.jpg
+    subtitle: 九月露湿，待君之前
 ```
 
 分类标签为自动获取，推荐文章请到`source/_data/slider.yml`中配置
-
-## 双栏开关
-
-### 配置文件第48行
-
-```yml
-post_double_row:
-  enable: true # true或false
-```
-
-## 代码高亮主题
-
-### 配置文件第30行
-
-```yml
-highlight_theme: mac light #  darker / pale night / light / ocean / mac / mac light / false
-```
 
 ## 关于页
 
@@ -58,7 +59,7 @@ highlight_theme: mac light #  darker / pale night / light / ocean / mac / mac li
 ```yml
 # 关于页
 about_page:
-  author: Echocbx # 作者名称
+  author: Aegcbx # 作者名称
   introduce: 是一名 学生、又菜又爱的前端爱好者、博主 # 作者简介
   careers: 初中生 # 生涯
   address: 中国，京海市 # 居住地
@@ -82,12 +83,11 @@ about_page:
 footer:
   footer_icons:
     enable: true
-    # 左边的图标，建议4个或者以下
     left:
-      - icon: fa-solid fa-compass # 图标
-        link: https://home.ezgx.site/ # 链接
-        desrc: 个人主页 # 描述
-        class: out # in为内部跳转，out为新标签页
+      - icon: fa-solid fa-compass
+        link: https://home.ezgx.site/
+        desrc: 个人主页
+        class: out
       - icon: fa-brands fa-qq
         link: https://res.abeim.cn/api/qq/?qq=3387251845
         desrc: 联系QQ
@@ -96,7 +96,6 @@ footer:
         link: /authorwechat/
         desrc: 联系微信
         class: in
-    # 右边的图标，建议4个或以下
     right:
       - icon: fa-brands fa-github
         link: https://github.com/ezgx
@@ -110,62 +109,39 @@ footer:
         link: mailto:3387251845@qq.com
         desrc: 发送邮件
         class: out
-  avatar: /img/avatar.png # 头像链接
-  line_1_title: 直达 # 第一列内容标题
-  line_1:
-    item_1: # 第一个链接
-      link: https://home.ezgx.site # 链接
-      name: 个人主页 # 显示文字
-    item_2:
-      link: /about/
-      name: 关于
-    item_3:
-      link: /link/
-      name: 友链
-    item_4:
-      link: javascript:toRandomPost()
-      name: 随机文章
-  line_2_title: 标签
-  line_2:
-    item_1:
-      name: 📚教程
-      link: /tags/教程/
-    item_2:
-      name: 🦋魔改教程
-      link: /categories/butterfly/
-    item_3:
-      name: 🌈捣鼓前端
-      link: /categories/前端/
-    item_4:
-      name: 📙生活记录
-      link: /categories/生活/
-  line_3_title: 我的
-  line_3:
-    item_1:
-      name: 关于
-      link: /about/
-    item_2:
-      name: 归档
-      link: /archives/
-    item_3:
-      name: 标签
-      link: /tags/
-    item_4:
-      name: 分类
-      link: /categories/
-  line_4_title: 协议
-  line_4:
-    item_1:
-      name: 版权协议
-      link: /cc/
-    item_2:
-      name: 主题协议
-      link: https://github.com/Ezgx/hexo-theme-dimension/blob/main/LICENSE
-    item_3:
-      name: 占位
-      link: javascript:void(0) # 占位使用javascript:void(0)
-    item_4:
-      name: 占位
-      link: javascript:void(0)
-  text: 2023 ©Echocbx # 底部文字。
+  footer_logo:
+    enable: true
+    url: /img/avatar.png
+  text: 九月露湿，待君之前。
+  footer_group:
+    enable: true
+    footer_group_link:
+      - group_title: 直达
+        footer_links: 
+          - text: 个人主页
+            link: https://home.ezgx.site
+            class: out
+          - text: 关于
+            link: /about/
+            class: in
+          - text: 友链
+            link: /lonk/
+            class: in
+          - text: 随机文章
+            link: javascript:toRandomPost()
+            class: in
+      - group_title: 标签
+        footer_links: 
+          - text: 📚教程
+            link: /tags/教程/
+            class: in
+          - text: 🦋魔改教程
+            link: /categories/butterfly/
+            class: in
+          - text: 🌈捣鼓前端
+            link: /categories/前端/
+            class: in
+          - text: 📙生活记录
+            link: /categories/生活/
+            class: in
 ```
