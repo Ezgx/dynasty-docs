@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: https://pic.imgdb.cn/item/649dc9951ddac507cc28e054.png
+heroImage: https://pic.imgdb.cn/item/649e8b691ddac507cc483e54.png
 actionText: 食用文档 →
 actionLink: /1-Introduction
 features:

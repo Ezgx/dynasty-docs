@@ -3,7 +3,7 @@ module.exports = {
   title: 'hexo主题dynasty',
   description: '二次元风格的hexo主题',
   head: [
-    ['link', { rel: 'icon', href: 'https://pic.imgdb.cn/item/649dc9951ddac507cc28e054.png' }],
+    ['link', { rel: 'icon', href: 'https://pic.imgdb.cn/item/649e8b691ddac507cc483e54.png' }],
     [
       'script', {}, `
       var _hmt = _hmt || [];
@@ -19,7 +19,7 @@ module.exports = {
   ]
   ],
   themeConfig: {
-    logo: 'https://pic.imgdb.cn/item/649dc9951ddac507cc28e054.png',
+    logo: 'https://pic.imgdb.cn/item/649e8b691ddac507cc483e54.png',
     sidebar: [
       ['/1-Introduction','简介'],
       ['/2-docs1','安装'],
