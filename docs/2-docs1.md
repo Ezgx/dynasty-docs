@@ -22,12 +22,16 @@ cnpm i hexo-theme-dynasty --save
 
 ## 必要插件
 
+卸载兼容性不佳的marked渲染器
+
 ```bash
 npm un hexo-renderer-marked
 ```
 
+安装kramed渲染器和必装组建
+
 ```bash
-npm i hexo-wordcount hexo-renderer-pug hexo-renderer-stylus hexo-renderer-kramed hexo-generator-search --save
+npm i hexo-wordcount hexo-renderer-pug hexo-renderer-stylus hexo-renderer-kramed hexo-generator-search is-promise object-assign pangu yamljs --save
 ```
 
 ## 文件操作
