@@ -5,14 +5,18 @@
 ## 导航菜单
 
 ```yml
-menu:
-  # 单个链接：
-  首页: / || fas fa-house-user
-  # 子菜单：
-  本站||fas fa-book:
-    归档: /archives/ || fas fa-box-archive
-    标签: /tags/ || fas fa-tags
-    分类: /categories/ || fas fa-folder-open
+nav:
+  menu: # 下面是导航栏
+    # 单个链接：
+    首页: / || fas fa-house-user
+
+    # 子菜单：
+    本站||fas fa-book:
+      归档: /archives/ || fas fa-box-archive
+      标签: /tags/ || fas fa-tags
+      分类: /categories/ || fas fa-folder-open
+
+  title: # 顶栏显示的标题
 # fas fa-house-user 这类的东西为图标。具体见fontawesome官网，作者资金有限，只能用免费版。
 ```
 
